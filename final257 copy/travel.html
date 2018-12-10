@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>Abroad and Beyond</title>
+<img class="mainpic"src="images/banner.JPG">  
+  
+</head> 
+
+
+
+<style>
+body { background-color: lavender;}
+@media screen and (max-width: 300px) 
+
+{ body {  background-color: lavender; }
+    }
+@media screen and (min-width: 600px) { body {  background-color: white; }
+    }
+    
+    h1 {color: white;
+        font-family:sans-serif; 
+        font-size: 50px; 
+        word-spacing:0.1em;
+        letter-spacing: 0.05em;
+        text-transform:uppercase;
+        text-align: center;
+        }
+    
+    h2 {font-family:sans-serif;
+        font-size: 40px;
+        color:slategray;
+        letter-spacing: 0.07em;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom:80px;
+    
+    }
+
+    
+    li  {display:inline;
+        float: left;
+        }   
+    
+    
+    ul  {list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: lightblue;
+        }
+
+    
+    li a {display: block;
+        color: slategray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 23px;
+          }
+ 
+    
+    li:hover{
+        background-color: white;
+            }
+    
+    
+    #intro {
+        font-family:sans-serif;
+        font-size: 70px;
+        color:slategray;
+        letter-spacing: 0.07em;
+        padding-top: 30px;
+        padding-left: 110px;
+        }
+    
+    
+    .webtitle {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    
+    
+    .mainpic{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;   
+    padding-bottom: 6px;
+    }
+
+    
+    #about {
+        overflow:scroll;
+        padding-left: 120px;
+        letter-spacing: .3px;
+        word-spacing: 1px;
+        font-family: sans-serif;
+        color:slategray;
+        font-size: 30px;
+        padding-right: 175px;
+        overflow:scroll;
+        padding-top: 10px;
+        }
+    
+    #learnmore {
+        letter-spacing: .2px;
+        word-spacing: 1px;
+        font-family: sans-serif;
+        color:slategray;
+        font-size: 24px;
+        margin-left: 600px;
+        background-color: lightblue;
+        color: slategrey;
+        padding: 9px 9px 9px 9px;
+    }
+    
+    
+    #profile {
+        height:400px;
+        padding-right: 50px;
+        }
+    
+    #Blogo {
+        font-family: sans-serif;
+        font-size:30px;
+        padding-left: 50px;
+        color:slategrey;
+        text-decoration: underline;
+        }
+    #barcelona{
+        font-family: sans-serif;
+        font-size:20px;
+        margin-bottom: 50px;
+        color:slategrey;
+        margin-left: 50px;
+        margin-right: 50px;
+        }    
+    
+    #church{
+        height:400px;
+        padding-top: 10px;
+        margin-right: 700px;
+        }
+    
+    
+    #Ilogo{
+        font-family:sans-serif;
+        font-size:30px;
+        margin-bottom:70px;
+        padding-left:50px;
+        color:slategrey;
+        text-decoration:underline;
+        padding-bottom:80px;
+     
+        }
+    
+    #italy{
+        font-family: sans-serif;
+        font-size:20px;
+        padding-left: 50px;
+        color:slategrey;
+        padding-bottom: 60px;
+        }    
+
+    #Clogo {
+         font-family: sans-serif;
+        font-size:30px;
+        margin-bottom: 100px;
+        padding-left: 50px;
+        color:slategrey;
+        text-decoration: underline;
+        }
+    
+    #croatia{
+         font-family: sans-serif;
+        font-size:20px;
+        margin-bottom: 100px;
+        padding-left: 50px;
+        color:slategrey;
+        }    
+    
+    #Belogo {
+         font-family: sans-serif;
+        font-size:30px;
+        margin-bottom: 100px;
+        padding-left: 50px;
+        color:slategrey;
+        text-decoration: underline;
+        }
+    
+    #belgium{
+        font-family: sans-serif;
+        font-size:20px;
+        margin-bottom: 100px;
+        padding-left: 50px;
+        color:slategrey;
+        }    
+    
+    .slideshow {
+        display:flex;
+        margin-left: 300px;
+        margin-top: 30px;
+    }
+    
+    .slidetext{
+        margin-left: 200px;
+        font-size: 30px;
+        font-family: sans-serif;
+        color:slategray;
+    }
+    
+    .venice {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 50%;
+    width: 50%;   
+    padding-bottom: 6px;
+    margin-left: 300px;
+    }
+
+    .split {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 50%;
+    width: 50%;   
+    padding-bottom: 6px;
+    margin-left: 300px;
+    }
+
+    .buildings {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: 50%;
+    width: 50%;   
+    padding-bottom: 6px;
+    margin-left: 300px;
+    }
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</style>
+  
+    
+<div class="webtitle">
+   <h1>
+       Abroad and Beyond
+      </h1> 
+</div>   
+    
+
+    
+   
+    
+<body>
+
+<ul>
+  <li><a href="final.html">Home</a></li>
+  <li><a href="travel.html">Travel</a></li>
+  <li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+ <h2>These are a few of my favorite countries that I visited while being abroad! </h2>   
+  
+    <h id="Blogo">Barcelona | Spain</h>
+   
+        
+    <div class="slideshow">
+    <img src="images/brunchandcake.jpeg" style="width:60%">
+    <div class="slidetext">Brunch and Cake</div>
+    </div>
+
+    <div class="slideshow">
+    <img src="images/sagrada.jpeg" style="width:60%">
+    <div class="slidetext">Sagrada Familia</div>
+    </div>
+
+    <div class="slideshow">
+    <img src="images/church.jpeg" style="width:60%">
+    <div class="slidetext">Catedral de la Santa Cruz</div>
+    </div>
+  
+    
+    <p id="barcelona">
+        I absolutely fell in love with Barcelona the second I arrived. I chose to study abroad in Spain because I have heard so many amazing things. I've always wanted to live in a big city and I thought this would be the perfect time. I lived with a host family, in which I had a host mom, dad and three younger brothers. I absolutely loved them and felt it allowed me fully embrace their unique culture. Above, there are a few photos. The first picture is from a restaurant called Brunch and Cake. This restaurant was absolutely delicious and I highly recommend it to everyone. Their presentation was beautiful and their food was even better! With multiple locations, the beachfront was easily my favorite. Next we have a photo of Sagrada Familia. One of the most widely recognized pieces of history and architecture, the Sagrada Familia is absolutely STUNNING. I highly recommend going right before sunset, because the stainglass reflects throughout the interior and it is simply beautiful. Lastly, I posted a photo of the Catedral de la Santa Cruz. Immediately, you will realize how intricate the architecture is in Barcelona. People are constantly entertaining and playing music... but be careful of the "pick pocketers." 
+    
+    </p>
+        
+
+    
+    
+    
+    
+    <h id="Ilogo"> Venice, Florence, Rome, Amalfi Coast | Italy</h>
+    <img class="venice"src="images/canal.jpeg">  
+    
+    <p id="italy">Above is a beautiful photo taken during my gondola ride in the canals of Venice. I had the amazing chance to travel all throughout Italy. First stop was Florence. I absolutely LOVED Florence. Top things to see: The David (of course) and the Duomo. The Duomo is like nothing I have ever seen before. It is massive!! So beautifully colored and detailed. My favorite part about Florence was the Piazzale Michelangelo. It was the best view of the entire city! You could see everything from up there! I suggest going in the early evening, the best time to go is for sunset! The next stop was Rome. It was simply unbelievable, as I imagined. The colosseum was bigger than I ever thought it would be. There is truly so much history in Rome. There are ruins everywhere, literally! It is more congested and touristy though, so 2-3 days is the perfect amount of time to see it all. Last but definitely not least, was the Amalfi Coast. Probably my personal favorite spot in Italy. A city built into the coastline, was something I had never seen before. The water was so blue and clear. I decided to hike The Path of the Gods, which took about 4 hours and it was such a memorable experience. It was a hike along the coast line from the Amalfi Coast, to Positano. I highly recommend it and I will definitely be going back here someday! </p>
+    
+    
+    
+    <h id="Clogo"> Split, Omis | Croatia</h>
+    <img class="split"src="images/split.jpeg">
+    
+    <p id="croatia">Croatia is absolutely one of the most magical places I have ever been. It is filled with so much history, yet every part of the country is so different. I was lucky enough to go to both Split and Omiš. This trip was very special to me because I got to travel with my mom. We truly had the best time. Highlight of the trip was making my mom go ziplining with me over the water. It was a once in a lifetime experience and I was so happy I go to share it with my best friend! Another thing we did was visit the Krka National Park. These waterfalls looked like they were straight out of a Disney movie! They were the most gorgeous waterfalls I had ever seen. They continued for miles and miles and it was an endless stream of smaller waterfalls leading to larger ones. </p>
+    
+    
+    
+    <h id="Belogo"> Brussels, Brugge | Belgium</h>
+        <img class="buildings"src="images/colors.jpg">
+
+    <p id="belgium">Belgium was probably one of the most underrated countries. I truly was not thrilled about visiting because I thought it would be freezing and I wasn't that interested. Little did I know that this would turn out to be one of my favorite places to visit. Brussels is amazing to see, but a place you can see in 2 days, easily! Brugge however, is so picturesque. Some people call it the Venice of the North! They have canals that wind throughout the area. How could I forget! You have to eat the Belgium waffles. They have two different kinds- sweet and savory of course! I loved them both. </p>
+    
+    
+
+ 
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slideshow");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 4000);
+}
+    
+    
+ 
+</script>
+    
+    
+
+</body>
+</html>
